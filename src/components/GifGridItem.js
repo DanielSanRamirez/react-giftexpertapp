@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types'; // snipper impt + tab
 
-export default function GifGridItem({id, title, url}) {
+export default function GifGridItem({ title, url }) {
 
     return (
         <div className="card animate__animated animate__fadeIn">
@@ -9,3 +10,10 @@ export default function GifGridItem({id, title, url}) {
         </div>
     )
 }
+
+GifGridItem.propTypes = {
+
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+}
+

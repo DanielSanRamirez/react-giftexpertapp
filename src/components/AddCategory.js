@@ -22,6 +22,7 @@ export default function AddCategory({ setCategories }) {
     // Si ya regreso un form no es necesario dejar las etiquetas vacías
     return (
         <form onSubmit={handleSubmit}>
+            <p>{inputVaue}</p>
             <input
                 type="text"
                 value={inputVaue}
